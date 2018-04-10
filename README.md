@@ -1,11 +1,10 @@
 # RemediosNaturais
+Aplicativo multiplataforma destinado a encontrar receitas de remédios caseiros e tratamentos homeopáticos.</br> </br> O aplicativo conta com sistema de categorias e artigos, o usuário pode marcar artigos que entender relevante por meio do "Bookmark", ficando armazenados em pagina própria para fácil acesso posterior. </br>Há planos futuros de implementar um sistema de envio de sugestões de receitas pelos usuários.
 </br>
-Aplicativo multiplataforma destinado a encontrar receitas de remédios caseiros e tratamentos homeopáticos.</br> O aplicativo conta com sistema de categorias e artigos, o usuário pode marcar artigos que entender relevante por meio do "Bookmark", ficando armazenados em pagina própria para fácil acesso posterior. </br>Há planos futuros de implementar um sistema de envio de sugestões de receitas pelos usuários.
-</br>
-## Screenshots
+## Screenshots</br>
 ![Imagens do aplicativo](https://i.imgur.com/DnugJjK.jpg)
 </br>
-![Painel](https://i.imgur.com/XX9XPDv.png)
+![Painel online](https://i.imgur.com/XX9XPDv.png)
 </br>
 ![Painel](https://i.imgur.com/yFo4ySF.png)
 </br>
