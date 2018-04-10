@@ -14,7 +14,7 @@ Aplicativo multiplataforma destinado a encontrar receitas de remédios caseiros 
 Crie uma database e rode nela a query contida em "/Backend/rest-api.sql"</br>
 
 Adicione as configurações do seu servidor SQL nos parâmetros contidos nas primeiras linhas dos arquivos:</br>
-/Backend/index.php</br>
+/Backend/web-admin.php</br>
 
 /Backend/rest-api.php</br>
 
