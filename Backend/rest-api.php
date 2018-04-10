@@ -1,7 +1,5 @@
 <?php
 
-
-/** CONFIG:START **/
 $config["host"] 		= "localhost" ; 		//host
 $config["user"] 		= "root" ; 		//Username SQL
 $config["pass"] 		= "" ; 		//Password SQL

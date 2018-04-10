@@ -449,9 +449,9 @@ angular.module("remedios_naturais.controllers", [])
 	
 	
 	// TODO: categoriasCtrl --|-- $scope.fetchURL
-	$scope.fetchURL = "http://localhost/remedios_naturais/rest-api.php?json=categorias";
+	$scope.fetchURL = "seusite/rest-api.php?json=categorias";
 	// TODO: categoriasCtrl --|-- $scope.fetchURLp
-	$scope.fetchURLp = "http://localhost/remedios_naturais/rest-api.php?json=categorias&callback=JSON_CALLBACK";
+	$scope.fetchURLp = "seusite/rest-api.php?json=categorias&callback=JSON_CALLBACK";
 	// TODO: categoriasCtrl --|-- $scope.hashURL
 	$scope.hashURL = md5.createHash( $scope.fetchURL.replace(targetQuery,raplaceWithQuery));
 	
@@ -970,9 +970,9 @@ $ionicConfig.backButton.text("");
 	
 	
 	// TODO: encontrarCtrl --|-- $scope.fetchURL
-	$scope.fetchURL = "http://localhost/remedios_naturais/rest-api.php?categorias=-1&json=remedios";
+	$scope.fetchURL = "seusite/rest-api.php?categorias=-1&json=remedios";
 	// TODO: encontrarCtrl --|-- $scope.fetchURLp
-	$scope.fetchURLp = "http://localhost/remedios_naturais/rest-api.php?categorias=-1&json=remedios&callback=JSON_CALLBACK";
+	$scope.fetchURLp = "seusite/rest-api.php?categorias=-1&json=remedios&callback=JSON_CALLBACK";
 	// TODO: encontrarCtrl --|-- $scope.hashURL
 	$scope.hashURL = md5.createHash( $scope.fetchURL.replace(targetQuery,raplaceWithQuery));
 	
@@ -1510,9 +1510,9 @@ $ionicConfig.backButton.text("");
 	// Retrieving data
 	var itemID = $stateParams.id;
 	// TODO: remedios_singlesCtrl --|-- $scope.fetchURL
-	$scope.fetchURL = "http://localhost/rest-api.php?json=remedios&id=" + itemID;
+	$scope.fetchURL = "seusite/rest-api.php?json=remedios&id=" + itemID;
 	// TODO: remedios_singlesCtrl --|-- $scope.fetchURLp
-	$scope.fetchURLp = "http://localhost/rest-api.php?json=remedios&id=" + itemID + "&callback=JSON_CALLBACK";
+	$scope.fetchURLp = "seusite/rest-api.php?json=remedios&id=" + itemID + "&callback=JSON_CALLBACK";
 	// TODO: remedios_singlesCtrl --|-- $scope.hashURL
 	$scope.hashURL = md5.createHash($scope.fetchURL);
 	
