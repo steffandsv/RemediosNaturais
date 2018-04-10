@@ -1,0 +1,27 @@
+	<ion-view view-title="Bookmarks of Encontrar" hide-nav-bar="false" >
+		<!-- content -->
+		<ion-content delegate-handle="top"   id="page-remedios_bookmark" class="page-remedios_bookmark">
+		
+
+
+		<ion-list class="list" ng-if="remedios_bookmark.length != 0">
+			<ion-item class="item item-icon-left" type="item-avatar" ng-repeat="item in remedios_bookmark" ng-href="#/remedios_naturais/remedios_singles/{{ item.id }}">
+				<i class="icon ion-ios-bookmarks-outline"></i>
+				<h2 class="" ng-bind-html="item.titulo | to_trusted"></h2>
+				<ion-option-button class="assertive-bg" ng-click="removeDbVirtualRemedios(item.id)"><i class="icon ion-trash-a"></i></ion-option-button>
+			</ion-item>					<ion-item class="item item-button">
+						<button class="button button-small button-calm" ng-click="clearDbVirtualRemedios();"><i class="icon ion-ios-refresh-outline"></i> Clear</button>
+					</ion-item>
+
+		</ion-list>
+
+
+		<!-- no product -->
+		<div class="remedios_bookmark padding text-center" ng-if="remedios_bookmark.length == 0">
+			<i class="icon ion-ios-bookmarks-outline"></i>
+			<p>There are no items</p>
+		</div>
+		<!-- no product -->
+		</ion-content>
+		<!-- ./content -->
+	</ion-view>

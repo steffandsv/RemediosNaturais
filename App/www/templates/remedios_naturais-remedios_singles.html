@@ -1,0 +1,30 @@
+	<ion-view view-title="{{ remedios.titulo }}" hide-nav-bar="false" >
+		<!-- content -->
+		<ion-content delegate-handle="top"   id="page-remedios_singles" class="page-remedios_singles">
+		
+			<ion-refresher pulling-text="Pull to refresh..."  on-refresh="doRefresh()"></ion-refresher>
+			<div class="hero slide-up dark-bg" style="background-image: url('data/images/background/bg0.jpg');">
+				<div class="padding-horizontal padding-bottom content content">
+					<img alt="" class="avatar" ng-src="{{remedios.imagem}}" />
+					<h3><a class="light">{{ remedios.titulo }}</a></h3>
+					<h4 class="light">&nbsp;</h4>
+				</div>
+			</div>
+			<div class="list ">
+					<div class="item item-divider"  ng-bind-html="remedios.titulo | to_trusted">{{remedios.titulo}}</div>
+					<div class="item item-text-wrap noborder to_trusted" ng-bind-html="remedios.texto | strHTML"></div>
+					<div class="item"><span class="subdued" >{{remedios.categorias}}</span></div>
+					<div class="item item-button"><button class="button button-colorful ink-dark" ng-click="openWebView(remedios.contribuidor)">contribuidor</button></div>
+					<div class="item"><span class="subdued" >resumo{{remedios.resumo}}</span></div>
+			</div>
+			<div class="list">
+				<div class="item tabs tabs-secondary tabs-icon-left tabs-stable">
+					<a class="tab-item" ng-click="addToDbVirtual(remedios);"><i class="icon ion-android-add-circle"></i> Add Bookmark</a>
+					<a class="tab-item" ng-href="#/remedios_naturais/remedios_bookmark"><i class="icon ion-ios-star"></i> Bookmark</a>
+				</div>
+			</div>
+			<br/><br/><br/>
+
+		</ion-content>
+		<!-- ./content -->
+	</ion-view>
