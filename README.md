@@ -1,5 +1,6 @@
 # RemediosNaturais
-Aplicativo multiplataforma destinado a encontrar receitas de remédios caseiros e tratamentos homeopáticos.</br> </br> O aplicativo conta com sistema de categorias e artigos, o usuário pode marcar artigos que entender relevante por meio do "Bookmark", ficando armazenados em pagina própria para fácil acesso posterior. </br>Há planos futuros de implementar um sistema de envio de sugestões de receitas pelos usuários.
+Ionic/Cordova Hybrid app to find recipes of natural remedies. Web panel + backend are also included.</br> </br> 
+The app has categories and articles, the user can bookmark articles to read later, causing them to be stored on bookmarks page. </br> This app can also be used as news/recipes, for example.
 </br>
 ## Screenshots</br>
 ![Imagens do aplicativo](https://i.imgur.com/DnugJjK.jpg)
@@ -9,23 +10,23 @@ Aplicativo multiplataforma destinado a encontrar receitas de remédios caseiros 
 ![Painel](https://i.imgur.com/yFo4ySF.png)
 </br>
 </br>
-## Como Instalar e Configurar
+## Setup
 
-Crie uma database e rode nela a query contida em "/Backend/rest-api.sql"</br>
+Create a database and run the query: "/Backend/rest-api.sql"</br>
 
-Adicione as configurações do seu servidor SQL nos parâmetros contidos nas primeiras linhas dos arquivos:</br>
+Add SQL config/host in the first line of the files:</br>
 /Backend/web-admin.php</br>
 
 /Backend/rest-api.php</br>
 
-O usuário e a senha padrão para login no painel são:</br>
+The default user/pass to login in the web panel are:</br>
 admin</br>
-admin</br> (podem ser alterados modificando-se as linhas 8 e 9 do arquivo /Backend/web-admin.php)</br>
+admin</br> (change it in the lines 8 'n 9 in the file /Backend/web-admin.php)</br>
 
-Após a correta instalação da rest-api e do painel, adicione o endereço online da instalação no lugar da expressão "seusite" contida nas linhas 452,454,973,975,1513,1515 do arquivo /App/www/js/controllers.js</br>
+After setup the rest-api/panel, add the url to your installation where there is the expression "seusite" in the lines 452,454,973,975,1513,1515 of file /App/www/js/controllers.js</br>
 
-Após isso, você já está pronto para compilar seu aplicativo utilizando Cordova ou Ionic.</br>
-Abaixo uma lista de comandos que deverá ser executada para instalar todos os plugins utilizados:</br>
+Now you can build your app using Ionic/Cordova.</br>
+Install the necessary plugins:</br>
 
 > cordova plugin add cordova-plugin-device --save </br>
 > cordova plugin add cordova-plugin-console --save </br>
@@ -36,21 +37,4 @@ Abaixo uma lista de comandos que deverá ser executada para instalar todos os pl
 > cordova plugin add cordova-plugin-dialogs --save </br>
 > cordova plugin add cordova-plugin-inappbrowser --save </br>
 
-
-Finalmente, adicione as plataformas para as quais você deseja compilar o app:
-
-> cordova platform add android
-
-ou
-
-> cordova platform add ios
-
-Rode os comandos de pré-compilação:
-
-> cordova clean </br>
-> cordova requirements
-
-
-Compile:
-
-> cordova build android[ou ios]
+## Thanks!
